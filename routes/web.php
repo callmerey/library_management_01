@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,20 +19,6 @@ use App\Http\Controllers\AdminController;
 Route::get('/admin', [AdminController::class, 'home'])->name('admin.home');
 
 Route::resources([
-    'author' => 'AuthorController',
-    'authorFollow' => 'AuthorFollowController',
-    'book' => 'BookController',
-    'bookFollow' => 'BookFollowController',
-    'borrowed' => 'BorrowedBookController',
-    'category' => 'CategoryController',
-    'comment' => 'CommentController',
-    'like' => 'LikeController',
-    'publisher' => 'PublisherController',
-    'rate' => 'RateController',
-    'role' => 'RoleController',
-    'star' => 'StarController',
+    'user' => 'Admin\UserController',
 ]);
 
-Route::resources([
-    
-]);

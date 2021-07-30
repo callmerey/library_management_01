@@ -79,8 +79,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">{{__('message.page_manager')}}:</h6>
-                        <a class="collapse-item" href="blank.html">{{__('message.list_user')}}</a>
-                        <a class="collapse-item" href="blank.html">{{__('message.add_user')}}</a>
+                        <a class="collapse-item" href="{{URL::to('user')}}">{{__('message.list_user')}}</a>
+                        <a class="collapse-item" href="{{URL::to('user/create')}}">{{__('message.add_user')}}</a>
                     </div>
                 </div>
             </li>

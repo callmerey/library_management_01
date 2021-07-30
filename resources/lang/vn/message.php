@@ -20,5 +20,18 @@
         'page5'=>'Quản Lý NXB',
         'list_publisher'=>'Danh Sách NXB',
         'add_publisher'=>'Thêm NXB',
+        'add_new'=>'Thêm Mới',
+        'update'=>'Cập Nhật',
+        'user_list'=>'Danh Sách Người Dùng',
+        'id'=>'Mã ID',
+        'user_name'=>'Họ Tên',
+        'user_email'=>'Email',
+        'user_address'=>'Địa Chỉ',
+        'user_role'=>'Quyền',
+        'user_image'=>'Hình Ảnh',
+        'action'=>'Hành Động',
+        'update_bnt'=>'Sửa',
+        'delete'=>'Xóa',
+        'phone'=>'Số ĐT',
     ]
 ?> 

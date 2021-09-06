@@ -57,7 +57,7 @@
                     <select name="role_id" class="form-control custom-select">
                         @foreach ($roles as $role)
                             <option value="{{ $role->id }}">
-                                {{ $role->role_name }} 
+                                {{ $role->name }} 
                             </option>                                       
                         @endforeach
                     </select>

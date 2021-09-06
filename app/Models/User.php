@@ -8,11 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Searchable\Searchable;
 use Spatie\Searchable\SearchResult;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements Searchable
 {
     use HasFactory, Notifiable;
-
+    use HasRoles;
+    
     protected $fillable = [
         'name',
         'email',

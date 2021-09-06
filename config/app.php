@@ -187,6 +187,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         App\Providers\SearchServiceProvider::class,
         App\Providers\NotifyServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
     ],
 
     /*

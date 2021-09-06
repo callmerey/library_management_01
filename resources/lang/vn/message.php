@@ -27,7 +27,7 @@ return[
  'user_name'=>'Họ Tên',
  'user_email'=>'Email',
  'user_address'=>'Địa Chỉ',
- 'user_role'=>'Quyền',
+ 'user_role'=>'Vai Trò',
  'user_image'=>'Hình Ảnh',
  'action'=>'Hành Động',
  'update_bnt'=>'Sửa',
@@ -191,5 +191,7 @@ return[
  'all_notify' => 'Tất Cả Thông Báo',
  'new_comment' => 'Đã Có 1 Comment Mới Với Sách Mà Bạn Đã Quan Tâm',
  'go_to' => 'Đi Đến Comment',
+ 'operation' => 'Thao Tác',
+ 'permission' => 'Cấp Quyền',
 ]
 ?>

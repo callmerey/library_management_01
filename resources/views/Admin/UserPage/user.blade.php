@@ -31,6 +31,7 @@
                             <th>{{__('message.user_address')}}</th>
                             <th>{{__('message.user_role')}}</th>
                             <th>{{__('message.user_image')}}</th>
+                            <th>{{__('message.operation')}}</th>
                             <th>{{__('message.action')}}</th>
                         </tr>
                     </thead>

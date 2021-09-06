@@ -16,6 +16,7 @@
         "laravel/ui": "^3.3",
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
+        "spatie/laravel-permission": "^5.1",
         "spatie/laravel-searchable": "^1.10"
     },
     "require-dev": {

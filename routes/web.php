@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\PublisherController;
 use App\Http\Controllers\Admin\StatisticController;
 use App\Http\Controllers\Admin\SearchAdminController;
 use App\Http\Controllers\Auth\LoginFBController;
+use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\BookBorrowController;
 use App\Models\Publisher;
 use App\Http\Controllers\ViewAuthorController;
@@ -68,6 +69,7 @@ Route::prefix('/admin')->group(function () {
             'statistic' => 'Admin\StatisticController',
             'search' => 'Admin\SearchAdminController',
             'notify' => 'Admin\NotifyController',
+            'permission' => 'Admin\PermissionController',
         ]);
         Route::get('admin/author/export', [AuthorController::class, 'export'])->name('author.export');
         Route::get('admin/publisher/export', [PublisherController::class, 'export'])->name('publisher.export');
@@ -89,6 +91,7 @@ Route::prefix('/admin')->group(function () {
         Route::get('admin/borrow/accept_book_all/{user_id}', [BorrowBookController::class, 'accept_book_all'])->name('borrow.accept_book_all');
         Route::get('admin/borrow/reject_all/{user_id}', [BorrowBookController::class, 'reject_all'])->name('borrow.reject_all');
         Route::get('admin/search-results/', [SearchAdminController::class, 'search'])->name('search.result');
+        Route::post('admin/insert/{user_id}', [UserController::class, 'insert_permission'])->name('insert.permission');
     });
 });
 

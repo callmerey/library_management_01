@@ -92,4 +92,12 @@ class UserController extends Controller
     {
       return Excel::download(new UsersExport, 'user_data.xlsx');
     }
+
+    public function insert_permission(Request $request, $user_id){
+        $data =  $request->all();   
+        $user_data = User::where('id',$user_id)->get();
+        $role = Role::find($user_data[0]->role_id);
+        $permission = $data['permission'];
+        $role->syncPermissions($permission);
+    }
 }
